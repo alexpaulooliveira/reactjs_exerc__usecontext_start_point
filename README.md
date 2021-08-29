@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Exercício acerca do *hook useContext*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse exercício deve ter início à partir do clone do repositório público do github disponibilizado em [alexpaulooliveira/reactjs_exerc__usecontext_start_point](https://github.com/alexpaulooliveira/reactjs_exerc__usecontext_start_point).
 
-## Available Scripts
+### Como baixar, configurar, e executar a aplicação:
 
-In the project directory, you can run:
+Estando na pasta à partir da qual você deseja que a aplicação seja criada, execute o seguinte comando:
 
-### `npm start`
+```
+git clone <endereço do repositório>
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Depois, instale as bibliotecas listadas no package.json, fazendo uso do seguinte comando:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm install
+```
 
-### `npm test`
+Por fim, execute a aplicação fazendo uso do seguinte comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Questões do exercício:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1) Cria uma aplicação para gerenciar a linguagem utilizada através do useContext, observando o seguinte: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O sistema define (por padrão) a linguagem "en", como pode ser visto na imagem abaixo:
 
-### `npm run eject`
+![Drag Racing](./img/../src/img/img1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Quando o usuário clicar no botão "Switch Language...", a interface deve ser alterada... à semelhança do que pode ser visto na imagem abaixo:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Drag Racing](./img/../src/img/img2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Considere também que um novo clique no mesmo botão alterará o contexto novamente (conforme instruções exibidas no próprio botão)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 2) Crie um aplicação que gerencie três variáveis em seu contexto (por meio do useContext).
 
-## Learn More
+A aplicação determinará (por padrão) os seguintes valores iniciais de contexto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Drag Racing](./img/../src/img/img3.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+E, quando o usuário clicar no botão "Alterar Contexto da Aplicação" os valores do contexto devem ser alterados conforme imagem abaixo:
+
+![Drag Racing](./img/../src/img/img4.png)
+
+### 3) Para as duas aplicações criadas nas questões anteriores é possível perceber que o valor do contexto se perde quando um *refresh* é dado na página. Implemente uma solução para assegurar a persistência do contexto.
