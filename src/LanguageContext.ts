@@ -1,8 +1,5 @@
 import { createContext } from 'react';
 
-const LanguageContext = createContext({
-  language: 'en',
-  setLanguage: (value:string) => {}
-});
+const LanguageContext = undefined
 
 export default LanguageContext;
